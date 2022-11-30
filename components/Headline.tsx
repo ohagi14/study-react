@@ -7,8 +7,10 @@ export function Headline(props:any) {
 
       <p className={styles.description}>
         Get started by editing{" "}
-        <code className={styles.code}>pages/{props.page}.tsx</code>
+        {props.children}
       </p>
+
+      <button onClick={props.onClick}>ボタン</button>
     </div>
   );
 }
